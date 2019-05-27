@@ -1,5 +1,5 @@
 pipeline {
-	agent node-develop
+	agent "node-develop"
 	stages {
 		stage ('build') {
 			steps {
