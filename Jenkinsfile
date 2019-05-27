@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage ('deploy') {
             steps{
-                sh "docker stop"
+                sh "docker rm -f webapp"
                 sh "docker run -d -p 5000:80 --rm --name webapp webapp"
             }
 
