@@ -1,5 +1,10 @@
 pipeline {
-	agent "node-develop"
+	agent {
+    node {
+        label 'node-develop'
+        customWorkspace '/home/ubuntu/workspace'
+    }
+}
 	stages {
 		stage ('build') {
 			steps {
