@@ -1,0 +1,10 @@
+pipeline {
+	agent node-master
+	stages {
+		stage ('build') {
+			
+		}
+		stage ('deploy') {
+
+	}
+}
